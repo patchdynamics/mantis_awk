@@ -1,0 +1,3 @@
+filter.awk contains an awk command to filter mantis data
+filter_command.sh shows how this could be used on the command line
+filter_all.sh contains commands to filter all files in the current directory, placing them in a directory 'cuts' one directory up.  this script could be called like so 'source filter_all.sh'
