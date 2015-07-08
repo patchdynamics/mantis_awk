@@ -1,0 +1,10 @@
+conn = database('farmington','matthewxi','','Vendor','PostgreSQL', 'Server', 'localhost');
+
+sqlquery = sprintf('select * from timeseries where timestamp >= to_timestamp(''2015-05-20'', ''YYYY-MM-DD'') ' );
+disp(sqlquery);
+curs = exec(conn,sqlquery);
+setdbprefs('DataReturnFormat','structure');
+curs = fetch(curs);
+curs.Data
+            obj.usgs_timeseries = curs.Data;
+            obj.usgs_timeseries_timestamps = datenum(obj.usgs_timeseries.timestamp);
