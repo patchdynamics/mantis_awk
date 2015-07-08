@@ -8,7 +8,7 @@ NR>1 {
 		if(c4 != "") 
 		  print STATION","$ix[c1]" "$ix[c2]","$ix[c3]","$ix[c4]
 		else
-		  print STATION","$ix[c1]" "$ix[c2]","$ix[c3]
+		  print STATION","$ix[c1]" "$ix[c2]","$ix[c3]","
 		
 
 }
